@@ -1,7 +1,7 @@
 import axios from 'axios';
 import clients from '../clients.json'
 
-export const url = 'http://localhost:8000';
+export const url = 'https://backendapi-io39.onrender.com';
 
 
 export const getAllClients = async () => {

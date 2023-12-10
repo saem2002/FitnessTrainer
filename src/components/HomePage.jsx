@@ -54,7 +54,7 @@ const HomePage = ({notify}) => {
                             <div className="appointment-list">
 
                                 <div className='Update_card_map'>
-                                    {Itemdata.length === 0 && changestate === -1 && <CircularProgress color="inherit" />}
+                                    {Itemdata && Itemdata.length === 0 && changestate === -1 && <CircularProgress color="inherit" />}
                                     {Itemdata && Itemdata.map((data, index) =>
                                         <>
 
