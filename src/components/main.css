@@ -486,6 +486,14 @@ footer {
   width: 12vw;
   height: 20vh;
 }
+.Small_screen_dialog
+{
+ 
+  display: flex;
+ 
+  justify-content: space-around;
+  padding: 5vh;
+}
 @media only screen and (max-width: 900px) {
   .Item_details_icons
   {
@@ -543,13 +551,22 @@ footer {
     height: 20vh;
   }
   .updatecard {
-    width: 20vw;
+    width: 40vw;
     margin: 2vh 3vw;
     flex-direction: column;
     
     align-items:flex-start;
+    margin-bottom: 10vh;
+    background-color: rgb(151, 147, 147)
   }
-
+  .Small_screen_dialog
+  {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5vh;
+  }
   .updatecard input {
     margin-right: 0;
     margin-bottom: 15px;
@@ -588,6 +605,7 @@ footer {
     margin-left: 2vw;
   }
   .update_input {
+    margin-top: 2vh;
     text-align: center;
     width: 30vw;
     background-color: black;

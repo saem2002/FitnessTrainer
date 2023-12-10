@@ -259,13 +259,15 @@ const Updatecard = ({ FirstName, LastName, Location, state, id, Appointments, se
                                         <button onClick={() => editAppointment(id, idtoupdate, value)}>Edit Appointment</button>
                                     </> : <div style={{ textAlign: 'center', fontWeight: 'bold', fontSize: ' calc(1vw + 0.75vh + 0.5vmin)', paddingBottom: '5vh' }}>All Appointments</div>}
                             </>}
-                        <DialogContentText id="alert-dialog-description">
+                        <DialogContentText  id="alert-dialog-description">
 
                             <>
+                            
                                 {addorEdit == 'edit' && Appointments.length == 0 && <div style={{ textAlign: 'center', fontSize: ' calc(0.5vw + 0.75vh + 0.5vmin)', paddingBottom: '5vh' }}>No appointments were scheduled till now</div>}
                                 {addorEdit == 'edit' && toupdate === false && Appointments && Appointments.map((data, index) =>
                                     <>
-                                        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5vh' }}>
+                                    <div className='Small_screen_dialog'  >
+                                     
                                             <div>{index + 1}</div>
                                             <div>
                                                 {data.date}
@@ -276,9 +278,12 @@ const Updatecard = ({ FirstName, LastName, Location, state, id, Appointments, se
                                             <DeleteIcon style={{ cursor: 'pointer' }} onClick={() => { setconfirm(0); deleteAppointment(id, data.id) }}> Delete appointment</DeleteIcon>
 
                                         </div>
+                                       
                                     </>
+                                   
 
                                 )}
+                               
                             </>
                             {/* <div>
                             {addorEdit=='edit' &&

@@ -3,13 +3,13 @@
     {
       "id": "1",
       "FirstName": "saem",
-      "LastName": "Arora",
+      "LastName": "Arora2",
       "Location": "Mansa,Punjab",
       "Appointments": [
         {
           "id": 2,
-          "date": "15/12/2023",
-          "time": "12:01:43 am"
+          "date": "10/12/2023",
+          "time": "1:29:13 pm"
         },
         {
           "id": 3,
@@ -25,11 +25,6 @@
           "id": 5,
           "date": "10/12/2023",
           "time": "12:15:15 am"
-        },
-        {
-          "id": 6,
-          "date": "16/12/2023",
-          "time": "1:31:33 am"
         },
         {
           "id": 6,
