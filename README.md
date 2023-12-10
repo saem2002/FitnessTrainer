@@ -50,10 +50,6 @@ It runs the app in the development mode.
 
 The page will reload when you make changes.
 
-4. Now to make this app working , you have to start the json server by opening a new terminal and run command
-   ```bash
-   npx json-server --watch src/clients.json --port 8000
+4. Now open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Now json-server can communicate with our frontend requests
-
-5. Now open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. To check in production mode it is live at [https://fittrac.netlify.app/](https://fittrac.netlify.app)

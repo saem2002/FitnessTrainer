@@ -82,7 +82,8 @@ const Updatecard = ({ FirstName, LastName, Location, state, id, Appointments, se
 
         e.preventDefault();
         await updateItems(product)
-
+        notify("Client info updated successfully")
+        setcheckFactor(checkFactor + 1)
 
     }
 
@@ -237,7 +238,7 @@ const Updatecard = ({ FirstName, LastName, Location, state, id, Appointments, se
                                         </DemoContainer>
                                     </LocalizationProvider>
 
-                                    {toupdate ? <button onClick={() => editAppointment(id, idtoupdate, value)}>Edit Appointment</button> :
+                                    {toupdate ? <button onClick={() => editAppointment(id, idtoupdate, value)}>Update Appointment</button> :
                                         <button onClick={() => addAppointment(id, value)}>Set Appointment</button>
                                     }</div>
                             </>
